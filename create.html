@@ -141,7 +141,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="admin.png" class="img-circle" alt="User Image" />
+              <img src="images/admin.png" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p class="text-overflow">John Doe</p>
@@ -220,10 +220,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         	<a href="social.html"><i class="fa fa-share-alt"></i> <span>Profiles Social</span></a>
                         </li><!-- ./Links -->
 
-
-                       <li >
-                        	<a href="messages.html"><i class="fa fa-envelope"></i> <span>Messages</span></a>
-                        </li>
+                        <!-- Links -->
+                       <!-- <li >
+                        	<a href="http://fundme.miguelvasquez.net/panel/admin/messages"><i class="fa fa-envelope"></i> <span>Messages</span></a>
+                        </li><!-- ./Links -->
 
                       </ul><!-- /.sidebar-menu -->
                     </section>
@@ -237,8 +237,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <h4>
             Panel Admin
             	<i class="fa fa-angle-right margin-separator"></i>
-            		Payment Settings
-
+            		Pages
+            			<i class="fa fa-angle-right margin-separator"></i>
+            				Add New
           </h4>
 
         </section>
@@ -246,62 +247,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main content -->
         <section class="content">
 
-
         	<div class="content">
 
         		<div class="row">
 
         	<div class="box box-danger">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Payment Settings</h3>
+                  <h3 class="box-title">Add New</h3>
                 </div><!-- /.box-header -->
 
+
                 <!-- form start -->
-                <form class="form-horizontal" method="POST" action="payments.html" enctype="multipart/form-data">
+                <form class="form-horizontal" method="post" action="pages.html">
 
-                	<input type="hidden" name="_token" value="W0ggcm3leMeZkpoOzNpbaICgIiRL5qrO6FIPxU2e">
+                	<input type="hidden" name="_token" value="FP7ZtRWBf8ARFBnnYzuSdFFIDRraSbMp2sMZr667">
 
 
-
-                      <!-- Start Box Body -->
+                 <!-- Start Box Body -->
                   <div class="box-body">
                     <div class="form-group">
-                      <label class="col-sm-2 control-label">Currency Code</label>
+                      <label class="col-sm-2 control-label">Title</label>
                       <div class="col-sm-10">
-                      	<select name="currency_code" class="form-control">
-
-                      		<option  selected="selected"  value="Ksh">Ksh</option>
-						  	<option   value="EUR">EUR</option>
-						  	<option  value="GBP">GBP</option>
-						  	<option  value="AUD">AUD</option>
-						  	<option  value="JPY">JPY</option>
-
-						  	<option  value="BRL">BRL</option>
-						  	<option   value="MXN">MXN</option>
-						  	<option  value="SEK">SEK</option>
-						  	<option  value="CHF">CHF</option>
-
-
-
-						  	<option  value="SGD">SGD</option>
-						  	<option  value="DKK">DKK</option>
-						  	<option  value="RUB">RUB</option>
-                          </select>
-                      </div>
-                    </div>
-                  </div><!-- /.box-body -->
-
-                   <!-- Start Box Body -->
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label class="col-sm-2 control-label">Fee for Membership</label>
-                      <div class="col-sm-10">
-                      	<select name="fee_donation" class="form-control">
-
-						  	<option  selected="selected"  value="1000">1,000</option>
-
-
-                          </select>
+                        <input type="text" value="" name="title" class="form-control" placeholder="Title">
                       </div>
                     </div>
                   </div><!-- /.box-body -->
@@ -309,23 +276,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!-- Start Box Body -->
                   <div class="box-body">
                     <div class="form-group">
-                      <label class="col-sm-2 control-label">Payment gateway</label>
+                      <label class="col-sm-2 control-label">Slug / URL</label>
                       <div class="col-sm-10">
-                      	<select name="payment_gateway" class="form-control">
-                      		<option  selected="selected"  value="Node">Nouveta</option>
-                      		<option  value="Ksh">Ksh</option>
-                          </select>
-                      </div>
-                    </div>
-                  </div><!-- /.box-body -->
-
-                     <!-- Start Box Body -->
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label class="col-sm-2 control-label">Paybill No.</label>
-                      <div class="col-sm-10">
-                        <input type="text" value="216666" name="Kcb_account" class="form-control" placeholder="Mpesa Account">
-
+                        <input type="text" value="" name="slug" class="form-control" placeholder="Slug / URL">
                       </div>
                     </div>
                   </div><!-- /.box-body -->
@@ -333,20 +286,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!-- Start Box Body -->
                   <div class="box-body">
                     <div class="form-group">
-                      <label class="col-sm-2 control-label">Nouveta Sandbox</label>
+                      <label class="col-sm-2 control-label">Show Navbar</label>
                       <div class="col-sm-10">
 
                       	<div class="radio">
                         <label class="padding-zero">
-                          <input type="radio" name="paypal_sandbox"  checked="checked"  value="true" checked>
-                          On
+                          <input type="radio" name="show_navbar" value="1">
+                          Yes
                         </label>
                       </div>
 
                       <div class="radio">
                         <label class="padding-zero">
-                          <input type="radio" name="paypal_sandbox"  value="false">
-                          Off
+                          <input type="radio" name="show_navbar" checked="checked" value="0">
+                          No
                         </label>
                       </div>
 
@@ -354,36 +307,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                   </div><!-- /.box-body -->
 
-
-           <div class="box box-danger">
-                <div class="box-header">
-                  <h3 class="box-title">Nouveta</h3>
-                </div><!-- /.box-header -->
-
                   <!-- Start Box Body -->
                   <div class="box-body">
                     <div class="form-group">
-                      <label class="col-sm-2 control-label">Nouveta Secret Key</label>
+                      <label class="col-sm-2 control-label">Content</label>
                       <div class="col-sm-10">
-                        <input type="text" value="sk_test_A5n9jHob7ZQiu8KDoNtc8F2H" name="stripe_secret_key" class="form-control">
-                      	<p class="help-block"><a href="https://node.tech/dashboard" target="_blank">https://node.tech/dashboard</a></p>
-                      </div>
-                    </div>
-                  </div><!-- /.box-body -->
 
-                  <!-- Start Box Body -->
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label class="col-sm-2 control-label">Nouveta Publishable Key</label>
-                      <div class="col-sm-10">
-                        <input type="text" value="pk_test_SR5GUT3geY98lqUcoVooy0ud" name="stripe_public_key" class="form-control">
-                      	<p class="help-block"><a href="https://node.tech/dashboard" target="_blank">https://node.tech/dashboard</a></p>
+                      	<textarea name="content"rows="5" cols="40" id="content" class="form-control" placeholder="Content"></textarea>
                       </div>
                     </div>
                   </div><!-- /.box-body -->
 
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-success">Save</button>
+                    <a href="pages.html" class="btn btn-default">Cancel</a>
+                    <button type="submit" class="btn btn-success pull-right">Save</button>
                   </div><!-- /.box-footer -->
                 </form>
               </div>
@@ -419,17 +356,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
    <script src="bootstrap/js/functions.js" type="text/javascript"></script>
 
-	<!-- icheck -->
-	<script src="plugins/icheck.min.js" type="text/javascript"></script>
+  <!-- icheck -->
+  <script src="plugins/icheck.min.js" type="text/javascript"></script>
+<script src="plugins/ckeditor.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(function () {
+	    // Replace the <textarea id="editor1"> with a CKEditor
+	    // instance, using default configuration.
+	    	CKEDITOR.replace('content');
+	 	 });
 
-	<script type="text/javascript">
-		//Flat red color scheme for iCheck
+	 	  //Flat red color scheme for iCheck
         $('input[type="radio"]').iCheck({
           radioClass: 'iradio_flat-red'
         });
-
 	</script>
-
 
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
