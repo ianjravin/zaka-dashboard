@@ -81,13 +81,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b><i class="ion ion-ios-bolt"></i></b></span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b><i class="ion ion-ios-bolt"></i> Panel Admin</b></span>
+          <span class="logo-lg"><b><i class="ion ion-ios-bolt"></i> Zaka Admin</b></span>
         </a>
 
         <!-- Header Navbar -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <a href="with.html" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
           </a>
           <!-- Navbar Right Menu -->
@@ -101,7 +101,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- User Account Menu -->
               <li class="dropdown user user-menu">
                 <!-- Menu Toggle Button -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="with.html" class="dropdown-toggle" data-toggle="dropdown">
                   <!-- The user image in the navbar-->
                   <img src="images/admin.png" class="user-image" alt="User Image" />
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
@@ -239,7 +239,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             	<i class="fa fa-angle-right margin-separator"></i>
             		Categories
             			<i class="fa fa-angle-right margin-separator"></i>
-            				Add New
+            				Edit
           </h4>
 
         </section>
@@ -253,15 +253,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         	<div class="box box-danger">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Add New</h3>
+                  <h3 class="box-title">Edit</h3>
                 </div><!-- /.box-header -->
 
 
 
                 <!-- form start -->
-                <form class="form-horizontal" method="post" action="addcate.html" enctype="multipart/form-data">
+                <form class="form-horizontal" method="post" action="#" enctype="multipart/form-data">
 
-                	<input type="hidden" name="_token" value="j4knuMz4rYH9MbM8xMfwTvfNdyRjbMfgygaasOYa">
+                	<input type="hidden" name="_token" value="K3ETlk7M1y8438F3oPBwc7W16KHm4CkhRKvsC21Q">
+                	<input type="hidden" name="id" value="17">
 
 
                  <!-- Start Box Body -->
@@ -269,7 +270,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="form-group">
                       <label class="col-sm-2 control-label">Name</label>
                       <div class="col-sm-10">
-                        <input type="text" value="" name="name" class="form-control" placeholder="Name">
+                        <input type="text" value="Animals" name="name" class="form-control" placeholder="Name">
                       </div>
                     </div>
                   </div><!-- /.box-body -->
@@ -279,7 +280,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="form-group">
                       <label class="col-sm-2 control-label">Slug / URL</label>
                       <div class="col-sm-10">
-                        <input type="text" value="" name="slug" class="form-control" placeholder="Slug / URL">
+                        <input type="text" value="Animals" name="slug" class="form-control" placeholder="Slug / URL">
                       </div>
                     </div>
                   </div><!-- /.box-body -->
@@ -292,14 +293,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                       	<div class="radio">
                         <label class="padding-zero">
-                          <input type="radio" name="mode" value="on" checked>
+                          <input type="radio" name="mode" value="on"  checked >
                           Active
                         </label>
                       </div>
 
                       <div class="radio">
                         <label class="padding-zero">
-                          <input type="radio" name="mode" value="off">
+                          <input type="radio" name="mode" value="off" >
                           Disabled
                         </label>
                       </div>
@@ -315,7 +316,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-sm-10">
                       	<div class="btn btn-info box-file">
                       		<input type="file" accept="image/*" name="thumbnail" />
-                      		<i class="glyphicon glyphicon-cloud-upload myicon-right"></i> UPLOAD
+                      		<i class="glyphicon glyphicon-cloud-upload myicon-right"></i> Replace Image
                       		</div>
 
                       <p class="help-block">Recommended size 457 x 359 px</p>
@@ -367,8 +368,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="bootstrap/js/functions.js" type="text/javascript"></script>
 
 
-	<!-- icheck -->
-	<script src="plugins/icheck.min.js" type="text/javascript"></script>
+
+	<!-- Morris -->
+	<script src="http://fundme.miguelvasquez.net/public/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
 
 	<script type="text/javascript">
 		//Flat red color scheme for iCheck
