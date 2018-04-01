@@ -13,7 +13,7 @@
 <!-- Ionicons -->
 <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
 <!-- App css -->
-<link href="admin/css/app.css" rel="stylesheet" type="text/css" />
+<!-- <link href="admin/css/app.css" rel="stylesheet" type="text/css" /> -->
 <!-- IcoMoon CSS -->
 <link href="css/icomoon.css" rel="stylesheet">
 
@@ -26,9 +26,10 @@
 
 <link rel="shortcut icon" href="#" />
 
-<link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+<!-- <link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> -->
 
 <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,6 +40,7 @@
 
 <link href="plugins/morris.css" rel="stylesheet" type="text/css" />
 <link href="plugins/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
 
 <script type="text/javascript">
 
@@ -75,11 +77,11 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="https://ianjravin.github.io/zaka-dashboard/admin" class="logo">
+    <a href="index.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b><i class="ion ion-ios-bolt"></i></b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b><i class="ion ion-ios-bolt"></i> Zaka Admin</b></span>
+      <span class="logo-lg"><b><i class="fa fa-desktop"></i> Zaka Admin</b></span>
     </a>
 
         <!-- Header Navbar -->
@@ -93,7 +95,7 @@ desired effect
             <ul class="nav navbar-nav">
 
             	<li>
-            		<a href="http://fundme.miguelvasquez.net"><i class="glyphicon glyphicon-home myicon-right"></i> View site</a>
+            		<a href="http://zaka.co.ke"><i class="fa fa-home myicon-right"></i> View site</a>
             	</li>
 
               <!-- User Account Menu -->
@@ -164,8 +166,9 @@ desired effect
                         	<a href="/settings"><i class="fa fa-cogs"></i> <span>General Settings</span> <i class="fa fa-angle-left pull-right"></i></a>
 
                        		<ul class="treeview-menu">
-                            <li ><a href="general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                            <li ><a href="limits.html"><i class="fa fa-circle-o"></i> Limits</a></li>
+                            <li ><a href="account.html"><i class="fa fa-user"></i> Account Settings</a></li>
+
+                            <li ><a href="limits.html"><i class="fa fa-toggle-on"></i> Limits</a></li>
                           </ul>
                         </li><!-- ./Links -->
 
@@ -176,17 +179,17 @@ desired effect
 
                          <!-- Links -->
                         <li >
-                        	<a href="campaigns.html"><i class="ion ion-speakerphone"></i> <span>Posts</span></a>
+                        	<a href="campaigns.html"><i class="fa fa-server"></i> <span>Accounts</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
                         <li >
-                         <a href="createpost.html"><i class="ion ion-speakerphone"></i> <span>Create Posts</span></a>
+                         <a href="createpost.html"><i class="fa fa-pencil"></i> <span>Create account</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
                         <li >
-                        	<a href="reported.html"><i class="ion ion-alert-circled"></i> <span>Posts Reported</span>
+                        	<a href="reported.html"><i class="fa fa-user-times"></i> <span>Posts Reported</span>
                         	            		<span class="pull-right-container">
                           <span class="label label-danger pull-right">4</span>
                         </span>
@@ -200,25 +203,25 @@ desired effect
 
                         <!-- Links -->
                         <li class="">
-                        	<a href="investments.html"><i class="ion ion-cash"></i> <span>Investments</span></a>
+                        	<a href="investments.html"><i class="fa fa-money"></i> <span>Investments</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
                         <li >
-                        	<a href="members.html"><i class="glyphicon glyphicon-user"></i> <span>Members</span></a>
+                        	<a href="members.html"><i class="fa fa-address-book"></i> <span>Members</span></a>
                         </li><!-- ./Links -->
                         <!-- Links -->
                         <li >
-                        	<a href="investors.html"><i class="fa fa-share-alt"></i> <span>Investors</span></a>
+                        	<a href="investors.html"><i class="fa fa-id-badge"></i> <span>Investors</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
                         <li >
-                          <a href="entreprenuers.html"><i class="fa fa-share-alt"></i> <span>Entreprenuers</span></a>
+                          <a href="entreprenuers.html"><i class="fa fa-users"></i> <span>Entreprenuers</span></a>
                         </li><!-- ./Links -->
                         <!-- Links -->
                         <li >
-                        	<a href="pages.html"><i class="glyphicon glyphicon-file"></i> <span>Pages</span></a>
+                        	<a href="pages.html"><i class="fa fa-file"></i> <span>Pages</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
@@ -274,7 +277,7 @@ desired effect
                       <th class="active">Title</th>
                       <th class="active">User</th>
                       <th class="active">Goal</th>
-                      <th class="active">Funds Raised</th>
+                      <th class="active">Amount Raised</th>
                       <th class="active">Status</th>
                       <th class="active">Date</th>
                       <th class="active">Actions</th>
@@ -300,937 +303,7 @@ desired effect
                       	</a> </td>
                     </tr>
                     <!-- /.TR -->
-                    <tr>
-                      <td>375</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Boxing" href="#" target="_blank">Boxing <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh100</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>09 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>374</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Campaign Title" href="#" target="_blank">Campaign Title <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Svita
-                      </td>
-                      <td>Ksh20,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>09 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>373</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Сбор средств" href="#" target="_blank">Сбор средств <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh1,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>07 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>372</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="MECFS" href="#" target="_blank">MECFS <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh5,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>06 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>371</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Fund Campaign" href="#3" target="_blank">Fund Campaign <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh1,234</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>05 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>370</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="TestCampaign" href="#" target="_blank">TestCampaign <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh5,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>05 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>369</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="test" href="#" target="_blank">test <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        ejul
-                      </td>
-                      <td>Ksh20,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>05 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>368</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="test" href="#" target="_blank">test <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh2,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>05 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>367</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Обновление по выводу" href="#" target="_blank">Обновление по выводу <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh10,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>04 Dec, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>366</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="211313" href="#" target="_blank">211313 <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh143</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>29 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>365</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="tttt" href="#" target="_blank">tttt <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh1,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>22 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>364</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="yoga" href="#" target="_blank">yoga <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh5,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>21 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>363</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Qu&#039;est-ce que le Lorem Ipsum?" href="#" target="_blank">Qu&#039;est-ce que le Lor... <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        ggghhg
-                      </td>
-                      <td>Ksh154</td>
-                      <td>Ksh50</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>19 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>362</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="تت اببليبع نممن ههبا هها اقفثلاي خخس" href="#" target="_blank">تت اببليبع نممن ههبا... <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh1,200</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>15 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>360</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Test1" href="#" target="_blank">Test1 <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh60,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>11 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>359</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="tes" href="#" target="_blank">tes <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        tes
-                      </td>
-                      <td>Ksh1,222</td>
-                      <td>Ksh10</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>06 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>358</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Testing" href="#" target="_blank">Testing <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Maxwell Dunyo
-                      </td>
-                      <td>Ksh10,000</td>
-                      <td>Ksh25</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>05 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>356</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Kurtar Beni" href="#3" target="_blank">Kurtar Beni <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh150</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>02 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>355</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="speedweb" href="#" target="_blank">speedweb <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        jaiminshah
-                      </td>
-                      <td>Ksh100</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>02 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>354</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Xops" href="#" target="_blank">Xops <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Marcos
-                      </td>
-                      <td>Ksh200</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>01 Nov, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>353</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="hrth" href="#" target="_blank">hrth <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh123</td>
-                      <td>Ksh123</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>30 Oct, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>352</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Sample campaign" href="#" target="_blank">Sample campaign <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Diep
-                      </td>
-                      <td>Ksh100,000</td>
-                      <td>Ksh333</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>25 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>351</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Doggies" href="#" target="_blank">Doggies <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Jonny
-                      </td>
-                      <td>Ksh5,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>24 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>350</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Jonny Test" href="#" target="_blank">Jonny Test <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh5,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>24 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>349</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="test" href="#" target="_blank">test <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh1,000,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>22 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>348</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Total" href="#" target="_blank">Total <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh505,050</td>
-                      <td>Ksh10,067</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>19 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>347</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="testing" href="#" target="_blank">testing <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh215</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>15 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>346</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="demotsa" href="#" target="_blank">demotsa <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        demotsa
-                      </td>
-                      <td>Ksh250</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>14 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>345</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="test" href="#" target="_blank">test <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh100</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>13 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>344</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Help raise money for a solar power plant!" href="#" target="_blank">Help raise money for... <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Irina
-                      </td>
-                      <td>Ksh40,500</td>
-                      <td>Ksh5</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>12 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>343</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="BUY ALL PROPERTIES IN THE WORLD" href="#" target="_blank">BUY ALL PROPERTIES I... <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        maija
-                      </td>
-                      <td>Ksh100,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>11 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>342</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Help" href="#" target="_blank">Help <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh10,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>09 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>341</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Help me buy new MacBook Pro" href="#" target="_blank">Help me buy new MacB... <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Daniel
-                      </td>
-                      <td>Ksh1,500</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>07 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>340</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="FUCK" href="#" target="_blank">FUCK <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        veer
-                      </td>
-                      <td>Ksh100</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>04 Sep, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>339</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Renovate School Building" href="#" target="_blank">Renovate School Buil... <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh10,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>30 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>338</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Introducción" href="#" target="_blank">Introducción <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Frank
-                      </td>
-                      <td>Ksh100</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>29 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>337</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="a cmpg" href="#" target="_blank">a cmpg <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        emily
-                      </td>
-                      <td>Ksh25,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>25 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>336</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="cycle" href="#" target="_blank">cycle <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh5,455</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>24 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>335</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="demo" href="#" target="_blank">demo <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        bajrang
-                      </td>
-                      <td>Ksh1,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>23 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>334</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Teste" href="#" target="_blank">Teste <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh100</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>22 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>333</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Stop War in Syria" href="#" target="_blank">Stop War in Syria <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Sina
-                      </td>
-                      <td>Ksh1,000,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>21 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>332</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="New test" href="#" target="_blank">New test <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Emmanuel
-                      </td>
-                      <td>Ksh2,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>20 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>331</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Terrys Pencils" href="#" target="_blank">Terrys Pencils <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        testtest
-                      </td>
-                      <td>Ksh50,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>19 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>330</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="deneme" href="#" target="_blank">deneme <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh10,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>16 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>329</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="IhdkdgejskshkshTest" href="#" target="_blank">IhdkdgejskshkshTest <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        John Doe
-                      </td>
-                      <td>Ksh1,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>16 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>328</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Party USA" href="#" target="_blank">Party USA <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Nick
-                      </td>
-                      <td>Ksh10,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>14 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>327</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="help to buy this" href="#" target="_blank">help to buy this <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Test
-                      </td>
-                      <td>Ksh15,000</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-default">Finalized</span>
-                      </td>
-                      <td>13 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>326</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Test" href="#" target="_blank">Test <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Emmanuel
-                      </td>
-                      <td>Ksh100</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>13 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
-                    <tr>
-                      <td>325</td>
-                      <td><img src="images/cause2.jpg" width="20" />
-                        <a title="Road Construction" href="#" target="_blank">Road Construction <i class="fa fa-external-link-square"></i></a>
-                      </td>
-                      <td>
-                        Fund Me Too
-                      </td>
-                      <td>Ksh500</td>
-                      <td>Ksh0</td>
-                      <td>
-                        <span class="label label-success">Active</span>
-                      </td>
-                      <td>11 Aug, 17</td>
-                      <td> <a href="postsedit.html" class="btn btn-success btn-xs padding-btn">
-                      		Edit
-                      	</a> </td>
-                    </tr>
-                    <!-- /.TR -->
+
 
 
                   </tbody>
@@ -1250,13 +323,7 @@ desired effect
 
               <!-- Array Of Links -->
               <li class="active"><span>1</span></li>
-              <!-- <li><a href="http://fundme.miguelvasquez.net/panel/admin/campaigns?page=2">2</a></li>
-                                                                <li><a href="http://fundme.miguelvasquez.net/panel/admin/campaigns?page=3">3</a></li>
-                                                                <li><a href="http://fundme.miguelvasquez.net/panel/admin/campaigns?page=4">4</a></li>
-                                                                <li><a href="http://fundme.miguelvasquez.net/panel/admin/campaigns?page=5">5</a></li>
-                                                                <li><a href="http://fundme.miguelvasquez.net/panel/admin/campaigns?page=6">6</a></li>
-                                                                <li><a href="http://fundme.miguelvasquez.net/panel/admin/campaigns?page=7">7</a></li>
-                                                                <li><a href="http://fundme.miguelvasquez.net/panel/admin/campaigns?page=8">8</a></li> -->
+              
 
               <!-- Next Page Link -->
               <li><a href="page=2" rel="next">&raquo;</a></li>
