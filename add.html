@@ -13,7 +13,7 @@
 <!-- Ionicons -->
 <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
 <!-- App css -->
-<link href="admin/css/app.css" rel="stylesheet" type="text/css" />
+<!-- <link href="admin/css/app.css" rel="stylesheet" type="text/css" /> -->
 <!-- IcoMoon CSS -->
 <link href="css/icomoon.css" rel="stylesheet">
 
@@ -26,9 +26,10 @@
 
 <link rel="shortcut icon" href="#" />
 
-<link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+<!-- <link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> -->
 
 <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,6 +40,7 @@
 
 <link href="plugins/morris.css" rel="stylesheet" type="text/css" />
 <link href="plugins/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
 
 <script type="text/javascript">
 
@@ -75,11 +77,11 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="https://ianjravin.github.io/zaka-dashboard/admin" class="logo">
+    <a href="index.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b><i class="ion ion-ios-bolt"></i></b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b><i class="ion ion-ios-bolt"></i> Zaka Admin</b></span>
+      <span class="logo-lg"><b><i class="fa fa-desktop"></i> Zaka Admin</b></span>
     </a>
 
         <!-- Header Navbar -->
@@ -93,7 +95,7 @@ desired effect
             <ul class="nav navbar-nav">
 
             	<li>
-            		<a href="http://fundme.miguelvasquez.net"><i class="glyphicon glyphicon-home myicon-right"></i> View site</a>
+            		<a href="http://zaka.co.ke"><i class="fa fa-home myicon-right"></i> View site</a>
             	</li>
 
               <!-- User Account Menu -->
@@ -164,9 +166,19 @@ desired effect
                         	<a href="/settings"><i class="fa fa-cogs"></i> <span>General Settings</span> <i class="fa fa-angle-left pull-right"></i></a>
 
                        		<ul class="treeview-menu">
-                            <li ><a href="general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                            <li ><a href="limits.html"><i class="fa fa-circle-o"></i> Limits</a></li>
+                            <li ><a href="account.html"><i class="fa fa-user"></i> Account Settings</a></li>
+
+                            <li ><a href="limits.html"><i class="fa fa-toggle-on"></i> Limits</a></li>
                           </ul>
+                        </li><!-- ./Links -->
+
+                        <li >
+                          <a href="messages.html"><i class="fa fa-file"></i> <span>Messages</span>
+                            <span class="pull-right-container">
+             <span class="label label-danger pull-right">4</span>
+           </span>
+
+                          </a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
@@ -176,57 +188,93 @@ desired effect
 
                          <!-- Links -->
                         <li >
-                        	<a href="campaigns.html"><i class="ion ion-speakerphone"></i> <span>Posts</span></a>
+                        	<a href="campaigns.html"><i class="fa fa-server"></i> <span>Accounts</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
-
-                        <!-- Links -->
                         <li >
-                         <a href="createpost.html"><i class="ion ion-speakerphone"></i> <span>Create Posts</span></a>
+                         <a href="createpost.html"><i class="fa fa-pencil"></i> <span>Create account</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
-
                         <li >
-                        	<a href="reported.html"><i class="ion ion-alert-circled"></i> <span>Posts Reported</span>
+                        	<a href="reported.html"><i class="fa fa-user-times"></i> <span>Reported account</span>
                         	            		<span class="pull-right-container">
                           <span class="label label-danger pull-right">4</span>
                         </span>
                                     </a>
                         </li><!-- ./Links -->
 
+                        <li >
+                        	<a href="outstanding.html"><i class="fa fa-file"></i> <span>Outstanding Loans</span>
+                            <span class="pull-right-container">
+             <span class="label label-danger pull-right">4</span>
+           </span>
+
+                          </a>
+                        </li><!-- ./Links -->
+
+                        <li >
+                        	<a href="#"><i class="fa fa-repeat"></i> <span>Review Account</span>
+                            <span class="pull-right-container">
+             <span class="label label-danger pull-right">4</span>
+           </span>
+
+                          </a>
+                        </li><!-- ./Links -->
+
                         <!-- Links -->
                         <li >
-                        	<a href="withdrawals.html"><i class="fa fa-university"></i> <span>Withdrawals</span></a>
+                        	<a href="withdrawals.html"><i class="fa fa-university"></i> <span>Withdrawals</span>
+                            <span class="pull-right-container">
+             <span class="label label-danger pull-right">4</span>
+           </span>
+
+                          </a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
                         <li class="">
-                        	<a href="investments.html"><i class="ion ion-cash"></i> <span>Investments</span></a>
+                        	<a href="investments.html"><i class="fa fa-money"></i> <span>Investments</span>
+                            <span class="pull-right-container">
+             <span class="label label-danger pull-right">4</span>
+           </span>
+
+                          </a>
                         </li><!-- ./Links -->
 
-                        <!-- Links -->
-                        <li >
-                        	<a href="members.html"><i class="glyphicon glyphicon-user"></i> <span>Members</span></a>
-                        </li><!-- ./Links -->
-                        <!-- Links -->
-                        <li >
-                        	<a href="investors.html"><i class="fa fa-share-alt"></i> <span>Investors</span></a>
+                        <li class="treeview ">
+                        	<a href="#"><i class="fa fa-users"></i> <span>Members</span> <i class="fa fa-angle-left pull-right"></i></a>
+
+                       		<ul class="treeview-menu">
+                            <li ><a href="account.html"><i class="fa fa-users"></i> All Zaka Members</a></li>
+
+                            <li ><a href="investors.html"><i class="fa fa-id-badge"></i> Investors</a></li>
+
+                            <li ><a href="entreprenuers.html"><i class="fa fa-address-book"></i> Entrepreneurs</a></li>
+                          </ul>
                         </li><!-- ./Links -->
 
-                        <!-- Links -->
+
                         <li >
-                          <a href="entreprenuers.html"><i class="fa fa-share-alt"></i> <span>Entreprenuers</span></a>
+                        	<a href="user.html"><i class="fa fa-user"></i> <span>Add User</span></a>
                         </li><!-- ./Links -->
-                        <!-- Links -->
+
                         <li >
-                        	<a href="pages.html"><i class="glyphicon glyphicon-file"></i> <span>Pages</span></a>
+                        	<a href="zaka.html"><i class="fa fa-user"></i> <span>Zaka Users</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
                         <li >
                         	<a href="payments.html"><i class="fa fa-credit-card"></i> <span>Payment Settings</span></a>
+                        </li><!-- ./Links -->
+
+                        <li >
+                        	<a href="reports.html"><i class="fa fa-file-pdf-o"></i> <span>Reports</span></a>
+                        </li><!-- ./Links -->
+
+                        <li >
+                        	<a href="#"><i class="fa fa-table"></i> <span>Loan Calculator</span></a>
                         </li><!-- ./Links -->
 
                         <!-- Links -->
